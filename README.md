@@ -1,7 +1,7 @@
-# Tauri + React + Typescript
+# RPGToolkit4 or (5)
 
-This template should help get you started developing with Tauri, React and Typescript in Vite.
+## Description
 
-## Recommended IDE Setup
+This is an attempt to recreate the classic RPGToolkit 3.2.1b, initially written by CBM. It is a tool for creating and editing RPG games. It is a WIP and still under development. It is not finished and is not ready for use.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+Note: I like to call it RPGToolkit5 since it will be a complete overhaul of the tech stack used to create it.

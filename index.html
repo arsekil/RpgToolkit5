@@ -1,14 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tauri + React + Typescript</title>
+    <title>RPGToolkit 5</title>
   </head>
+  <style>
+    :root {
+      --menu-background: #2d3748;
+      --menu-text: #e2e8f0;
+      --menu-border: #4a5568;
+      --menu-hover: #4a5568;
+      --menu-disabled: #718096;
+      --menu-focus: #3182ce;
+      --menu-focus-border: #63b3ed;
+      --menu-shortcut: #a0aec0;
+      --dropdown-background: #2d3748;
+      --dropdown-border: #4a5568;
+      --dropdown-hover: #4a5568;
+      --dropdown-text: #e2e8f0;
+      --background-color: #f5f5f5;
+      --text-color: #333;
+      --secondary-text-color: #666;
+      --primary-color: #2196f3;
+    }
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>

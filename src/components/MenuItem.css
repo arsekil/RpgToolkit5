@@ -1,0 +1,100 @@
+.menu-item-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-item-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    white-space: nowrap;
+    min-width: 120px;
+}
+
+.menu-item-label:hover,
+.menu-item-label:focus {
+    background-color: var(--menu-hover, #4a5568);
+    outline: none;
+}
+
+.menu-item-label.disabled {
+    color: var(--menu-disabled, #718096);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.menu-item-label.disabled:hover {
+    background-color: transparent;
+}
+
+.shortcut {
+    margin-left: 16px;
+    font-size: 0.85em;
+    color: var(--menu-shortcut, #a0aec0);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--dropdown-background, #2d3748);
+    border: 1px solid var(--dropdown-border, #4a5568);
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    z-index: 1000;
+    padding: 4px 0;
+    animation: dropdownFadeIn 0.15s ease-out;
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-menu .menu-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 14px;
+    color: var(--dropdown-text, #e2e8f0);
+}
+
+.dropdown-menu .menu-item:hover {
+    background-color: var(--dropdown-hover, #4a5568);
+}
+
+.menu-separator {
+    height: 1px;
+    background-color: var(--dropdown-border, #4a5568);
+    margin: 4px 0;
+}
+
+/* Keyboard navigation support */
+.menu-item-label:focus {
+    background-color: var(--menu-focus, #3182ce);
+    box-shadow: 0 0 0 2px var(--menu-focus-border, #63b3ed);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu-item-label {
+        min-width: 100px;
+        padding: 8px 8px;
+        font-size: 14px;
+    }
+
+    .dropdown-content {
+        min-width: 180px;
+    }
+}
